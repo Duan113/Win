@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>猜拳</title>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/caiquan.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.box1 {
+				width: 700px;
+				height: 300px;
+				margin: 0 auto;
+				padding-left: 150px;
+			}
+
+			.box_computer,.box_person {
+				margin: 0 auto;
+				width: 200px;
+				height: 200px;
+				float: left;
+				text-align: center;
+			}
+
+			.box_computer img,
+			.box_person img {
+				margin-top: 30px;
+				width: 400px;
+				height: 400px;
+			}
+
+			.box_computer h2,
+			.box_person h2 {
+				text-align: center;
+				font-size: 30px;
+			}
+
+			.box_person {
+				width: 500px;
+				height: 600px;
+				float: left;
+			}
+
+			.box2 {
+				width: 600px;
+				height: 600px;
+				margin: 0 auto;
+			}
+
+			.box2 img {
+				width: 80px;
+				height: 120px;
+				float: left;
+				margin-left: 30px;
+			}
+
+			.amone {
+				width: 600px;
+				height: 200px;
+				padding-left: 120px;
+			}
+
+            .box3{
+				width: 600px;
+				height: 200px;
+				margin: 0 auto;
+			}
+			.bottom {
+				width: 400px;
+				height: 100px;
+				float: right;
+				text-align: center;
+				border: red 1px dashed;
+				display: none;
+			}
+
+			.bottom2 {
+				width: 400px;
+				height: 100px;
+				float: right;
+				text-align: center;
+				border: blue 1px dashed;
+				display: none;
+			}
+
+			.bottom3 {
+				width: 400px;
+				height: 100px;
+				float: right;
+				text-align: center;
+				border: #21ff8c 1px solid;
+				display: none;
+			}
+
+			.bottom span {
+				line-height: 100px;
+				font-size: 30px;
+				color: #ff0000;
+			}
+
+			.bottom2 span {
+				line-height: 100px;
+				font-size: 30px;
+				color: blue;
+			}
+
+			.bottom3 span {
+				line-height: 100px;
+				font-size: 30px;
+				color: #21ff8c;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="box1">
+			<div class="box_computer">
+				<h2>电脑</h2>
+				<img src="img/0.png" id="img_computer" style="height: 200px;width: 200px;">
+			</div>
+			<div class="box_person">
+				<h2>个人</h2>
+				<img src="img/1.png" id="img_person" style="height: 200px;width: 200px;">
+			</div>
+		</div>
+
+		<div class="box2">
+			<div class="amone">
+				
+				<img src="img/b0.png" id="img0">
+				<img src="img/b1.png" id="img1">
+				<img src="img/b2.png" id="img2">
+			</div>
+		</div>
+		
+		<div class="box3">
+			<div class="bottom">
+				<span>你输了</span>
+			</div>
+
+			<div class="bottom2">
+				<span>你赢了</span>
+			</div>
+			<div class="bottom3">
+				<span>平局</span>
+			</div>
+		</div>
+	</body>
+</html>
